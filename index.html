@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <section class="header">
+        <h1>MemeMyMeme</h1>
+        <section class="form">
+            <form>
+                <label for="imageUrl">Image Url:</label>
+                <input type="text" name="imageUrl" placeholder="(Required)" id="img">
+                <label for="top-text">Top Text:</label>
+                <input type="text" name="top-text" placeholder="(Optional: Max 30 characters per line.)" id="top-text">
+                <label for="bottom-text">Bottom Text:</label>
+                <input type="text" name="bottom-text" placeholder="(Optional: Max 30 characters per line.)" id="bottom-text">
+                <button class="submit">Submit</button>
+            </form>
+        </section>
+    </section>
+    <section class="all-content"></section>
+    <script src="app.js"></script>
+</body>
+</html>

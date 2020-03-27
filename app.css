@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    max-height: 1000rem;
+    width: 100vw;
+    font-family: 'Anton', sans-serif;
+    display: grid;
+    grid-template-columns: 3rem 1fr 3rem;
+    grid-template-rows: auto 1fr;
+    background: #f4f4f4;
+}
+
+.header {
+    grid-column: 1 / -1;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, .5);
+    border: 3px solid black;
+}
+    .header h1 {
+        color: #f94a15;
+        font-size: 1.5rem;
+        text-decoration: overline;
+        padding: 1rem;
+    }
+
+    form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        border: 3px solid black;
+        margin: .6rem;
+        padding: 1rem;
+        background: white;
+        box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, .5);
+    }
+
+        form input {
+            border: 1px solid #000061;
+            width: 70%;
+        }
+
+        form label {
+            margin-bottom: .3rem;
+        }
+
+        form button {
+            border: 1px solid #000061;
+            background: #f94a15;
+            color: white;
+            font-family: inherit;
+            border-radius: 1rem;
+            margin-top: 1rem;
+        }
+
+.all-content {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.meme {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, .5);
+    border-radius: 1rem;
+    margin: 1rem;
+    width: 21rem;
+    height: 20rem;
+}
+
+    .meme:hover,
+    .meme:active,
+    .meme:visited,
+    .meme:link {
+        background: url(imgs/close.jpg) no-repeat center/cover !important;
+    }
+
+    .top {
+        margin: 0;
+        color: white;
+        font-size: 1.5rem;
+        text-shadow: -1px 1px 0 #000, 
+                    1px 1px 0 #000, 
+                    1px -1px 0 #000,
+                    -1px -1px 0 #000; 
+    }
+
+    .bottom {
+        margin: 0;
+        color: white;
+        font-size: 1.5rem;
+        text-shadow: -1px 1px 0 #000, 
+                    1px 1px 0 #000, 
+                    1px -1px 0 #000,
+                    -1px -1px 0 #000; 
+    }
+
+@media (min-width: 60rem) {
+    body {
+        display: grid;
+        grid-template-columns: 20rem 1fr 20rem;
+        grid-template-rows: auto 1fr;
+    }
+
+    .header h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        border: 3px solid black;
+        margin: .6rem;
+        padding: 1rem;
+        background: white;
+        box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, .5);
+    }
+
+    form input {
+        margin-bottom: .3rem;
+        width: 100%;
+    }
+
+
+    .all-content {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
